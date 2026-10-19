@@ -135,7 +135,7 @@
     }
   </style>
 </head>
-<body>
+<body class="">
 <div class="wrap" id="dashboard">
   <div class="topbar">
     <div>
@@ -161,7 +161,7 @@
 
   <div class="filters" data-html2canvas-ignore="true">
     <label for="monthSelect">조회 기준월</label>
-    <select id="monthSelect"><option value="2026-07">2026-07</option><option value="2026-09">2026-09</option></select>
+    <select id="monthSelect"><option value="2026-09">2026-09</option></select>
     <label for="sortSelect">정렬</label>
     <select id="sortSelect">
       <option value="orgOrder">직제순</option>
@@ -173,10 +173,10 @@
   </div>
 
   <div class="metrics">
-    <div class="metric"><div class="label">총 예산</div><div class="value" id="totalBudget">395.9억원</div><div class="detail">선택 기준월 팀 합계</div></div>
-    <div class="metric"><div class="label">누적 집행액</div><div class="value" id="totalSpent">265.8억원</div><div class="detail">선택 기준월 누적액</div></div>
-    <div class="metric"><div class="label">전체 집행률</div><div class="value" id="overallRate">67.1%</div><div class="detail" id="rateGuide">연간 예산 대비 67.1% 집행</div></div>
-    <div class="metric"><div class="label">집행 필요 잔액</div><div class="value" id="totalRemain">130.1억원</div><div class="detail">예산액 - 누적 집행액</div></div>
+    <div class="metric"><div class="label">총 예산</div><div class="value" id="totalBudget">366.5억원</div><div class="detail">선택 기준월 팀 합계</div></div>
+    <div class="metric"><div class="label">누적 집행액</div><div class="value" id="totalSpent">252.3억원</div><div class="detail">선택 기준월 누적액</div></div>
+    <div class="metric"><div class="label">전체 집행률</div><div class="value" id="overallRate">68.8%</div><div class="detail" id="rateGuide">연간 예산 대비 68.8% 집행</div></div>
+    <div class="metric"><div class="label">집행 필요 잔액</div><div class="value" id="totalRemain">114.2억원</div><div class="detail">예산액 - 누적 집행액</div></div>
   </div>
 
   <div class="grid primary-charts">
@@ -184,74 +184,62 @@
       <h2>예산액 대비 누적 집행액</h2>
       <div class="desc" id="mainStatusGuide">팀별 예산액과 누적 집행액을 비교합니다. 팀 막대를 클릭하면 사업별 현황이 팝업으로 열립니다. · 우수 90% 이상 · 보통 60% 이상 90% 미만 · 관심 60% 미만</div>
       <div class="chartbox tall" id="amountChartBox" style="height: auto;"><div class="native-chart"><button type="button" class="native-row clickable" data-index="0">
-      <span class="native-name">자금지원팀</span>
-      <span class="native-bars"><span class="native-budget" style="width:4.0221914008321775%"></span><span class="native-spent" style="width:1.928155894590846%"></span></span>
-      <span class="native-label"><b>47.9%</b> <span class="badge bad">관심</span><small>(1.4억원 / 2.9억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="1">
-      <span class="native-name">현장지원팀</span>
-      <span class="native-bars"><span class="native-budget" style="width:3.6061026352288486%"></span><span class="native-spent" style="width:1.8207999999999998%"></span></span>
-      <span class="native-label"><b>50.5%</b> <span class="badge bad">관심</span><small>(1.3억원 / 2.6억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="2">
-      <span class="native-name">일자리취업팀</span>
-      <span class="native-bars"><span class="native-budget" style="width:33.05478502080444%"></span><span class="native-spent" style="width:14.936441289875175%"></span></span>
-      <span class="native-label"><b>45.2%</b> <span class="badge bad">관심</span><small>(10.8억원 / 23.8억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="3">
       <span class="native-name">미래전략</span>
       <span class="native-bars"><span class="native-budget" style="width:7.745796116504855%"></span><span class="native-spent" style="width:4.982825797503467%"></span></span>
       <span class="native-label"><b>64.3%</b> <span class="badge warn">보통</span><small>(3.6억원 / 5.6억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="4">
+    </button><button type="button" class="native-row clickable" data-index="1">
       <span class="native-name">스타트업이노베이션</span>
       <span class="native-bars"><span class="native-budget" style="width:20.124826629680996%"></span><span class="native-spent" style="width:10.231094840499306%"></span></span>
       <span class="native-label"><b>50.8%</b> <span class="badge bad">관심</span><small>(7.4억원 / 14.5억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="5">
+    </button><button type="button" class="native-row clickable" data-index="2">
       <span class="native-name">기업성장</span>
       <span class="native-bars"><span class="native-budget" style="width:100%"></span><span class="native-spent" style="width:92.46986579750347%"></span></span>
       <span class="native-label"><b>92.5%</b> <span class="badge good">우수</span><small>(66.7억원 / 72.1억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="6">
+    </button><button type="button" class="native-row clickable" data-index="3">
       <span class="native-name">자금지원</span>
       <span class="native-bars"><span class="native-budget" style="width:4.0221914008321775%"></span><span class="native-spent" style="width:2.502305686546463%"></span></span>
       <span class="native-label"><b>62.2%</b> <span class="badge warn">보통</span><small>(1.8억원 / 2.9억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="7">
+    </button><button type="button" class="native-row clickable" data-index="4">
       <span class="native-name">현장지원</span>
       <span class="native-bars"><span class="native-budget" style="width:3.6061026352288486%"></span><span class="native-spent" style="width:2.506840776699029%"></span></span>
       <span class="native-label"><b>69.5%</b> <span class="badge warn">보통</span><small>(1.8억원 / 2.6억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="8">
+    </button><button type="button" class="native-row clickable" data-index="5">
       <span class="native-name">수출전략</span>
       <span class="native-bars"><span class="native-budget" style="width:40.15635298196948%"></span><span class="native-spent" style="width:26.832635922330095%"></span></span>
       <span class="native-label"><b>66.8%</b> <span class="badge warn">보통</span><small>(19.3억원 / 29억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="9">
+    </button><button type="button" class="native-row clickable" data-index="6">
       <span class="native-name">마케팅</span>
       <span class="native-bars"><span class="native-budget" style="width:31.051389459084604%"></span><span class="native-spent" style="width:16.656660859916784%"></span></span>
       <span class="native-label"><b>53.6%</b> <span class="badge bad">관심</span><small>(12억원 / 22.4억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="10">
+    </button><button type="button" class="native-row clickable" data-index="7">
       <span class="native-name">수출지원</span>
       <span class="native-bars"><span class="native-budget" style="width:30.788155339805822%"></span><span class="native-spent" style="width:24.604512676837725%"></span></span>
       <span class="native-label"><b>79.9%</b> <span class="badge warn">보통</span><small>(17.7억원 / 22.2억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="11">
+    </button><button type="button" class="native-row clickable" data-index="8">
       <span class="native-name">일자리취업</span>
       <span class="native-bars"><span class="native-budget" style="width:50.00865715672676%"></span><span class="native-spent" style="width:27.698854549237172%"></span></span>
       <span class="native-label"><b>55.4%</b> <span class="badge bad">관심</span><small>(20억원 / 36.1억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="12">
+    </button><button type="button" class="native-row clickable" data-index="9">
       <span class="native-name">소상공인지원</span>
       <span class="native-bars"><span class="native-budget" style="width:49.333425797503466%"></span><span class="native-spent" style="width:27.80292418862691%"></span></span>
       <span class="native-label"><b>56.4%</b> <span class="badge bad">관심</span><small>(20억원 / 35.6억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="13">
+    </button><button type="button" class="native-row clickable" data-index="10">
       <span class="native-name">소상공인육성</span>
       <span class="native-bars"><span class="native-budget" style="width:18.01932037447989%"></span><span class="native-spent" style="width:12.283229042995838%"></span></span>
       <span class="native-label"><b>68.2%</b> <span class="badge warn">보통</span><small>(8.9억원 / 13억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="14">
+    </button><button type="button" class="native-row clickable" data-index="11">
       <span class="native-name">공동체정책</span>
       <span class="native-bars"><span class="native-budget" style="width:67.58183079056866%"></span><span class="native-spent" style="width:30.59984936199723%"></span></span>
       <span class="native-label"><b>45.3%</b> <span class="badge bad">관심</span><small>(22.1억원 / 48.7억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="15">
+    </button><button type="button" class="native-row clickable" data-index="12">
       <span class="native-name">사회적경제육성</span>
       <span class="native-bars"><span class="native-budget" style="width:6.8238557558945905%"></span><span class="native-spent" style="width:4.368106920943134%"></span></span>
       <span class="native-label"><b>64.0%</b> <span class="badge warn">보통</span><small>(3.1억원 / 4.9억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="16">
+    </button><button type="button" class="native-row clickable" data-index="13">
       <span class="native-name">인력양성</span>
       <span class="native-bars"><span class="native-budget" style="width:10.180305131761443%"></span><span class="native-spent" style="width:4.931967156726769%"></span></span>
       <span class="native-label"><b>48.4%</b> <span class="badge bad">관심</span><small>(3.6억원 / 7.3억원)</small></span>
-    </button><button type="button" class="native-row clickable" data-index="17">
+    </button><button type="button" class="native-row clickable" data-index="14">
       <span class="native-name">일자리창출</span>
       <span class="native-bars"><span class="native-budget" style="width:68.91816920943134%"></span><span class="native-spent" style="width:61.51158120665742%"></span></span>
       <span class="native-label"><b>89.3%</b> <span class="badge warn">보통</span><small>(44.3억원 / 49.7억원)</small></span>
@@ -265,7 +253,7 @@
     <div class="detail-toolbar" data-html2canvas-ignore="true">
       <div class="detail-filter">
         <label for="detailTeamSelect">팀 필터</label>
-        <select id="detailTeamSelect"><option value="__ALL__">전체 팀</option><option value="자금지원팀">자금지원팀</option><option value="현장지원팀">현장지원팀</option><option value="일자리취업팀">일자리취업팀</option><option value="미래전략">미래전략</option><option value="스타트업이노베이션">스타트업이노베이션</option><option value="기업성장">기업성장</option><option value="자금지원">자금지원</option><option value="현장지원">현장지원</option><option value="수출전략">수출전략</option><option value="마케팅">마케팅</option><option value="수출지원">수출지원</option><option value="일자리취업">일자리취업</option><option value="소상공인지원">소상공인지원</option><option value="소상공인육성">소상공인육성</option><option value="공동체정책">공동체정책</option><option value="사회적경제육성">사회적경제육성</option><option value="인력양성">인력양성</option><option value="일자리창출">일자리창출</option></select>
+        <select id="detailTeamSelect"><option value="__ALL__">전체 팀</option><option value="미래전략">미래전략</option><option value="스타트업이노베이션">스타트업이노베이션</option><option value="기업성장">기업성장</option><option value="자금지원">자금지원</option><option value="현장지원">현장지원</option><option value="수출전략">수출전략</option><option value="마케팅">마케팅</option><option value="수출지원">수출지원</option><option value="일자리취업">일자리취업</option><option value="소상공인지원">소상공인지원</option><option value="소상공인육성">소상공인육성</option><option value="공동체정책">공동체정책</option><option value="사회적경제육성">사회적경제육성</option><option value="인력양성">인력양성</option><option value="일자리창출">일자리창출</option></select>
       </div>
       <div class="detail-filter search-filter">
         <label for="detailBusinessSearch">사업명 검색</label>
@@ -289,77 +277,14 @@
           <input id="detailRateMax" type="number" min="0" step="0.1" placeholder="최대">
         </div>
       </div>
-      <div class="detail-count" id="detailCount">107개 세부사업</div>
+      <div class="detail-count" id="detailCount">98개 세부사업</div>
     </div>
     <div class="detail-table-wrap">
       <table class="detail-table">
         <thead>
           <tr><th>팀명</th><th>세부사업명·상태</th><th>예산액</th><th>누적 집행액</th><th>잔액</th><th>집행률</th></tr>
         </thead>
-        <tbody id="detailTableBody"><tr data-team="자금지원팀" data-business="2026년 전북특별자치도중소기업육성자금운영" data-rate="47.93794482758621">
-      <td class="team-cell">자금지원팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 전북특별자치도중소기업육성자금운영</span><span class="badge bad">관심</span></div></td>
-      <td>290,000,000원</td>
-      <td>139,020,040원</td>
-      <td>150,979,960원</td>
-      <td>47.9%</td>
-    </tr><tr data-team="현장지원팀" data-business="2026년 중소기업종합지원시스템운영" data-rate="53.738033333333334">
-      <td class="team-cell">현장지원팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 중소기업종합지원시스템운영</span><span class="badge bad">관심</span></div></td>
-      <td>240,000,000원</td>
-      <td>128,971,280원</td>
-      <td>111,028,720원</td>
-      <td>53.7%</td>
-    </tr><tr data-team="현장지원팀" data-business="2026년 중견기업네트워크구축지원" data-rate="11.542">
-      <td class="team-cell">현장지원팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 중견기업네트워크구축지원</span><span class="badge bad">관심</span></div></td>
-      <td>20,000,000원</td>
-      <td>2,308,400원</td>
-      <td>17,691,600원</td>
-      <td>11.5%</td>
-    </tr><tr data-team="일자리취업팀" data-business="2026년 육아휴직대체인력근로자지원" data-rate="69.74156626506024">
-      <td class="team-cell">일자리취업팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 육아휴직대체인력근로자지원</span><span class="badge warn">보통</span></div></td>
-      <td>166,000,000원</td>
-      <td>115,771,000원</td>
-      <td>50,229,000원</td>
-      <td>69.7%</td>
-    </tr><tr data-team="일자리취업팀" data-business="지역특화형 비자사업" data-rate="55.48018450826806">
-      <td class="team-cell">일자리취업팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>지역특화형 비자사업</span><span class="badge bad">관심</span></div></td>
-      <td>287,250,000원</td>
-      <td>159,366,830원</td>
-      <td>127,883,170원</td>
-      <td>55.5%</td>
-    </tr><tr data-team="일자리취업팀" data-business="2026년 직업교육혁신지구사업" data-rate="45.942845">
-      <td class="team-cell">일자리취업팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 직업교육혁신지구사업</span><span class="badge bad">관심</span></div></td>
-      <td>600,000,000원</td>
-      <td>275,657,070원</td>
-      <td>324,342,930원</td>
-      <td>45.9%</td>
-    </tr><tr data-team="일자리취업팀" data-business="2026년 전북특별자치도일자리센터운영사업" data-rate="43.218739666666664">
-      <td class="team-cell">일자리취업팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 전북특별자치도일자리센터운영사업</span><span class="badge bad">관심</span></div></td>
-      <td>900,000,000원</td>
-      <td>388,968,657원</td>
-      <td>511,031,343원</td>
-      <td>43.2%</td>
-    </tr><tr data-team="일자리취업팀" data-business="2026년 초등학부모10시출근제도입중소기업지원" data-rate="33.33671428571429">
-      <td class="team-cell">일자리취업팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 초등학부모10시출근제도입중소기업지원</span><span class="badge bad">관심</span></div></td>
-      <td>140,000,000원</td>
-      <td>46,671,400원</td>
-      <td>93,328,600원</td>
-      <td>33.3%</td>
-    </tr><tr data-team="일자리취업팀" data-business="2026년 전북형청년친화기업육성사업" data-rate="31.20084827586207">
-      <td class="team-cell">일자리취업팀</td>
-      <td class="business-cell"><div class="business-with-status"><span>2026년 전북형청년친화기업육성사업</span><span class="badge bad">관심</span></div></td>
-      <td>290,000,000원</td>
-      <td>90,482,460원</td>
-      <td>199,517,540원</td>
-      <td>31.2%</td>
-    </tr><tr data-team="소상공인육성" data-business="2026년 로컬브랜드활용관광콘텐츠활성화사업" data-rate="100">
+        <tbody id="detailTableBody"><tr data-team="소상공인육성" data-business="2026년 로컬브랜드활용관광콘텐츠활성화사업" data-rate="100">
       <td class="team-cell">소상공인육성</td>
       <td class="business-cell"><div class="business-with-status"><span>2026년 로컬브랜드활용관광콘텐츠활성화사업</span><span class="badge good">우수</span></div></td>
       <td>50,000,000원</td>
@@ -1050,20 +975,28 @@
     </div>
   </section>
 
-  <div class="foot" id="generatedAt">생성 시각: 2026. 10. 19. 오후 4:42:35</div>
+  <div class="foot" id="generatedAt">생성 시각: 2026. 10. 19. 오후 4:48:41</div>
 </div>
 
 <div class="modal-backdrop" id="businessModal" aria-hidden="true">
   <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="businessChartTitle">
     <div class="modal-header">
       <div>
-        <h2 id="businessChartTitle">사업별 누적 집행액</h2>
-        <div class="desc" id="businessChartDesc"></div>
+        <h2 id="businessChartTitle">현장지원팀 사업별 누적 집행액</h2>
+        <div class="desc" id="businessChartDesc">2개 사업 · 우수 90% 이상 · 보통 60% 이상 90% 미만 · 관심 60% 미만</div>
       </div>
       <button type="button" id="businessModalClose" class="modal-close" aria-label="팝업 닫기">×</button>
     </div>
     <div class="modal-body">
-      <div class="modal-chartbox" id="businessChartBox"><canvas id="businessAmountChart"></canvas></div>
+      <div class="modal-chartbox" id="businessChartBox" style="height: auto;"><div class="native-chart"><button type="button" class="native-row" data-index="0" disabled="">
+      <span class="native-name">2026년 중소기업종합지원시스템운영</span>
+      <span class="native-bars"><span class="native-budget" style="width:100%"></span><span class="native-spent" style="width:53.738033333333334%"></span></span>
+      <span class="native-label"><b>53.7%</b> <span class="badge bad">관심</span><small>(1.3억원 / 2.4억원)</small></span>
+    </button><button type="button" class="native-row" data-index="1" disabled="">
+      <span class="native-name">2026년 중견기업네트워크구축지원</span>
+      <span class="native-bars"><span class="native-budget" style="width:8.333333333333332%"></span><span class="native-spent" style="width:0.9618333333333333%"></span></span>
+      <span class="native-label"><b>11.5%</b> <span class="badge bad">관심</span><small>(0억원 / 0.2억원)</small></span>
+    </button></div></div>
     </div>
   </div>
 </div>
@@ -1071,7 +1004,7 @@
 <script>
 const DISTRIBUTION_MODE = true;
 const STATUS_THRESHOLDS = {good:90, warn:60};
-const SAMPLE_CSV = "기준월,팀명,사업명,예산액,누적집행액\n2026-09,미래전략,2026년 제7회지니포럼운영,250000000,211641000\n2026-09,미래전략,2026년 제3회전북포럼운영,200000000,131744300\n2026-09,미래전략,2026년 전북에너지생태계활성화지원사업,100000000,7421400\n2026-09,미래전략,2025년 전북대RISE바이오전자약물전달시스템개발_이월,8471900,8455040\n2026-09,스타트업이노베이션,2026년 전북시제품제작지원사업,200000000,65226290\n2026-09,스타트업이노베이션,2026년 K-바이오헬스연계협력지원사업,150000000,22612120\n2026-09,스타트업이노베이션,2026년 K-바이오헬스지역센터지원사업(국비),700000000,488181790\n2026-09,스타트업이노베이션,2026년 K-바이오헬스지역센터지원사업(도비),351000000,123395748\n2026-09,스타트업이노베이션,2026년 J-BioValley공간조성,50000000,38245990\n2026-09,기업성장,2026년 전북특별자치도돋움기업육성사업,2700000000,2469246290\n2026-09,기업성장,2026년 전북특별자치도도약기업육성사업,1700000000,1595634177\n2026-09,기업성장,2026년 소기업혁신역량강화사업,2400000000,2208127257\n2026-09,기업성장,2026년 농공단지입주기업경영활성화,400000000,391729700\n2026-09,기업성장,2026년 고창군기업ESG경영지원구축사업,10000000,2339900\n2026-09,자금지원,2026년 전북특별자치도중소기업육성자금운영,290000000,180416240\n2026-09,현장지원,2026년 전북특별자치도중소기업종합지원시스템운영,240000000,178304820\n2026-09,현장지원,2026년 중견기업네트워크구축지원,20000000,2438400\n2026-09,수출전략,2026년 전북특별자치도해외통상거점센터운영,585000000,539308748\n2026-09,수출전략,2026년 FTA통상진흥센터운영(국비),104500000,63049590\n2026-09,수출전략,2026년 FTA통상진흥센터운영(도비),600000000,246873269\n2026-09,수출전략,2026년 찾아가는FTA서비스사업운영,59600000,34412000\n2026-09,수출전략,2026년 해외사무소운영,488238000,479603015\n2026-09,수출전략,2026년 일본해외사무소운영,60900000,60899991\n2026-09,수출전략,2026년 OKFTA컨설팅지원,29000000,8150000\n2026-09,수출전략,2026년 전북특별자치도수출통합지원센터운영,650000000,373837957\n2026-09,수출전략,2026년 전주시통상닥터운영,50000000,27750200\n2026-09,수출전략,2026년 김제형통상닥터운영,90000000,41170580\n2026-09,수출전략,2026년 김제시통상마스터Youth운영,80000000,23743100\n2026-09,수출전략,2026년 전주시수출바우처지원사업,30000000,1000000\n2026-09,수출전략,2025년 완주군소공인맞춤형기업환경개선사업_이월,32200600,25500600\n2026-09,수출전략,2025년 찾아가는FTA서비스사업운영_이월,35834450,9334000\n2026-09,마케팅,2026년 전북생생장터운영,750000000,493070672\n2026-09,마케팅,2026년 전북상품오프라인마케팅지원사업,100000000,52074950\n2026-09,마케팅,2026년 중소기업온라인플랫폼판매지원사업,450000000,239479230\n2026-09,마케팅,2026년 수산물공동브랜드육성,50000000,23853640\n2026-09,마케팅,2026년 중소기업제품공공구매확대사업,40000000,28068000\n2026-09,마케팅,2026년 중소기업맞춤형입찰정보서비스운영,36000000,16725708\n2026-09,마케팅,2026년 남원시중소기업온라인플랫폼판매지원,130000000,65689080\n2026-09,마케팅,2026년 해외온라인마케팅지원,200000000,27970260\n2026-09,마케팅,2026년 농촌융복합산업통합마케팅지원사업,20000000,11037850\n2026-09,마케팅,\"2026년 우수상품온,오프라인판로개척지원\",200000000,152791470\n2026-09,마케팅,2026년 전북놀고선물받고연계지원사업,30000000,13353553\n2026-09,마케팅,2026년 로컬상품관입점지원,144000000,13149080\n2026-09,마케팅,2026년 농공상융합형중소기업전북생생장터전용판매관운영,20000000,13637012\n2026-09,마케팅,2026년 익산원예농협지원사업,10000000,0\n2026-09,마케팅,2023년 고향사랑기부제-이월,384920,0\n2026-09,마케팅,2024년 고향사랑기부제-이월,120000,0\n2026-09,마케팅,2025년 고향사랑기부제운영_이월,349260,54400\n2026-09,마케팅,2025년 전북생생장터운영_이월,57951000,49990343\n2026-09,수출지원,2026년 수출기업활성화지원사업,1480000000,1292046240\n2026-09,수출지원,2026년 중국광저우수출입상품교역회수출컨소시엄,121622000,120842990\n2026-09,수출지원,2026년 지역혁신클러스터육성사업,500000000,312070679\n2026-09,수출지원,2026년 홍콩주얼리&젬월드전시회지원,32610000,28771063\n2026-09,수출지원,2026년 전주K-프리미엄소비재호주무역사절단운영,60000000,0\n2026-09,수출지원,2025년 국가혁신클러스터육성(비R&D)3차년도_이월,25594000,20254392\n2026-09,일자리취업,2026년 전북특별자치도일자리센터운영사업,900000000,583595651\n2026-09,일자리취업,2026년 기능우수인력도내중소기업취업지원,162000000,102490960\n2026-09,일자리취업,2026년 지역특화형비자사업,287250000,192565260\n2026-09,일자리취업,2026년 직업교육혁신지구사업,600000000,316109922\n2026-09,일자리취업,2026년 전북형청년친화기업육성사업,290000000,105498700\n2026-09,일자리취업,2026년 신중년유연근무형일자리지원사업,441600000,54053470\n2026-09,일자리취업,2026년 육아휴직대체인력근로자지원,166000000,153440200\n2026-09,일자리취업,2026년 초등학부모10시출근제도입중소기업지원,140000000,94031400\n2026-09,일자리취업,2025년 직업교육혁신지구사업_이월,141533000,139023000\n2026-09,일자리취업,2025년 청년나래일자리지원사업(이음플러스)_이월,277004341,137246600\n2026-09,일자리취업,2025년 청년친화친구기업지원사업_이월,200236840,119032250\n2026-09,소상공인지원,2026년 전북민생솔루션,500000000,299443336\n2026-09,소상공인지원,2026년 전북천년명가육성사업,230000000,158772400\n2026-09,소상공인지원,2026년 소상공인온라인판로지원사업,400000000,303322970\n2026-09,소상공인지원,2026년 폐업소상공인사업정리지원사업,100000000,51648280\n2026-09,소상공인지원,2026년 전북소상공인든든보험,850000000,92171030\n2026-09,소상공인지원,2026년 새출발재기지원사업,200000000,49727791\n2026-09,소상공인지원,2026년 로컬창업기업육성사업(로컬기업육성),1208440000,1022073827\n2026-09,소상공인지원,2026년 로컬창업기업육성사업(모두의창업),16700000,11000000\n2026-09,소상공인지원,2025년 1인자영업자사회보험료지원_이월,43000000,10731200\n2026-09,소상공인지원,2025년 소상공인온라인판로지원사업_이월,3800000,2500000\n2026-09,소상공인지원,2025년 전북민생솔루션_이월,5000000,3200000\n2026-09,소상공인육성,2026년 소상공인희망센터운영,596500000,394308081\n2026-09,소상공인육성,2026년 지역경제살리기도민운동사업,98000000,97912136\n2026-09,소상공인육성,2026년 순창장류소공인특화지원센터운영(11차년도),410000000,279720197\n2026-09,소상공인육성,2026년 중장년기술창업센터운영(국비),75000000,37060410\n2026-09,소상공인육성,2026년 중장년기술창업센터운영(도비),50000000,15011980\n2026-09,소상공인육성,2026년 로컬브랜드활용관광콘텐츠활성화사업,50000000,50000000\n2026-09,소상공인육성,2025년 순창장류소공인특화지원센터운영(10차)_이월,19692999,11608010\n2026-09,공동체정책,2026년 전북사회적경제혁신타운운영,1908462000,939061320\n2026-09,공동체정책,2026년 사회적기업창업경영지원운영사업,1246360000,549374239\n2026-09,공동체정책,2026년 완주군사회적경제기본계획수립연구용역,20460000,1746000\n2026-09,공동체정책,2026년 지역생태계활성화전략사업(통합돌봄),942600000,480399200\n2026-09,공동체정책,2026년 지역생태계활성화전략사업(노동통합),628400000,210942890\n2026-09,공동체정책,2026년 사회적연대경제청년일경험시범사업,126368000,24725490\n2026-09,사회적경제육성,2026년 마을기업육성사업,492000000,314940509\n2026-09,인력양성,2026년 지역산업맞춤형인력양성사업,604000000,284643120\n2026-09,인력양성,2026년 산업구조변화대응등특화훈련,130000000,70951712\n2026-09,일자리창출,2026년 지역산업맞춤형일자리창출지원사업,250000000,148351595\n2026-09,일자리창출,26년 농생명산업및새만금고용특구일자리생태계조성프젝트,400000000,197495190\n2026-09,일자리창출,2026년 도농상생형고용플랫폼조성프로젝트,4199000000,4049000000\n2026-09,일자리창출,2026년 기초이음프로젝트(바이오),60000000,17794160\n2026-09,일자리창출,2026년 기초이음프로젝트(관광),60000000,22344060\n2026-07,일자리취업팀,2026년 육아휴직대체인력근로자지원,166000000,115771000\n2026-07,일자리취업팀,2026년 전북특별자치도일자리센터운영사업,900000000,388968657\n2026-07,일자리취업팀,2026년 전북형청년친화기업육성사업,290000000,90482460\n2026-07,일자리취업팀,2026년 직업교육혁신지구사업,600000000,275657070\n2026-07,일자리취업팀,2026년 초등학부모10시출근제도입중소기업지원,140000000,46671400\n2026-07,일자리취업팀,지역특화형 비자사업,287250000,159366830\n2026-07,자금지원팀,2026년 전북특별자치도중소기업육성자금운영,290000000,139020040\n2026-07,현장지원팀,2026년 중견기업네트워크구축지원,20000000,2308400\n2026-07,현장지원팀,2026년 중소기업종합지원시스템운영,240000000,128971280";
+const SAMPLE_CSV = "기준월,팀명,사업명,예산액,누적집행액\n2026-09,미래전략,2026년 제7회지니포럼운영,250000000,211641000\n2026-09,미래전략,2026년 제3회전북포럼운영,200000000,131744300\n2026-09,미래전략,2026년 전북에너지생태계활성화지원사업,100000000,7421400\n2026-09,미래전략,2025년 전북대RISE바이오전자약물전달시스템개발_이월,8471900,8455040\n2026-09,스타트업이노베이션,2026년 전북시제품제작지원사업,200000000,65226290\n2026-09,스타트업이노베이션,2026년 K-바이오헬스연계협력지원사업,150000000,22612120\n2026-09,스타트업이노베이션,2026년 K-바이오헬스지역센터지원사업(국비),700000000,488181790\n2026-09,스타트업이노베이션,2026년 K-바이오헬스지역센터지원사업(도비),351000000,123395748\n2026-09,스타트업이노베이션,2026년 J-BioValley공간조성,50000000,38245990\n2026-09,기업성장,2026년 전북특별자치도돋움기업육성사업,2700000000,2469246290\n2026-09,기업성장,2026년 전북특별자치도도약기업육성사업,1700000000,1595634177\n2026-09,기업성장,2026년 소기업혁신역량강화사업,2400000000,2208127257\n2026-09,기업성장,2026년 농공단지입주기업경영활성화,400000000,391729700\n2026-09,기업성장,2026년 고창군기업ESG경영지원구축사업,10000000,2339900\n2026-09,자금지원,2026년 전북특별자치도중소기업육성자금운영,290000000,180416240\n2026-09,현장지원,2026년 전북특별자치도중소기업종합지원시스템운영,240000000,178304820\n2026-09,현장지원,2026년 중견기업네트워크구축지원,20000000,2438400\n2026-09,수출전략,2026년 전북특별자치도해외통상거점센터운영,585000000,539308748\n2026-09,수출전략,2026년 FTA통상진흥센터운영(국비),104500000,63049590\n2026-09,수출전략,2026년 FTA통상진흥센터운영(도비),600000000,246873269\n2026-09,수출전략,2026년 찾아가는FTA서비스사업운영,59600000,34412000\n2026-09,수출전략,2026년 해외사무소운영,488238000,479603015\n2026-09,수출전략,2026년 일본해외사무소운영,60900000,60899991\n2026-09,수출전략,2026년 OKFTA컨설팅지원,29000000,8150000\n2026-09,수출전략,2026년 전북특별자치도수출통합지원센터운영,650000000,373837957\n2026-09,수출전략,2026년 전주시통상닥터운영,50000000,27750200\n2026-09,수출전략,2026년 김제형통상닥터운영,90000000,41170580\n2026-09,수출전략,2026년 김제시통상마스터Youth운영,80000000,23743100\n2026-09,수출전략,2026년 전주시수출바우처지원사업,30000000,1000000\n2026-09,수출전략,2025년 완주군소공인맞춤형기업환경개선사업_이월,32200600,25500600\n2026-09,수출전략,2025년 찾아가는FTA서비스사업운영_이월,35834450,9334000\n2026-09,마케팅,2026년 전북생생장터운영,750000000,493070672\n2026-09,마케팅,2026년 전북상품오프라인마케팅지원사업,100000000,52074950\n2026-09,마케팅,2026년 중소기업온라인플랫폼판매지원사업,450000000,239479230\n2026-09,마케팅,2026년 수산물공동브랜드육성,50000000,23853640\n2026-09,마케팅,2026년 중소기업제품공공구매확대사업,40000000,28068000\n2026-09,마케팅,2026년 중소기업맞춤형입찰정보서비스운영,36000000,16725708\n2026-09,마케팅,2026년 남원시중소기업온라인플랫폼판매지원,130000000,65689080\n2026-09,마케팅,2026년 해외온라인마케팅지원,200000000,27970260\n2026-09,마케팅,2026년 농촌융복합산업통합마케팅지원사업,20000000,11037850\n2026-09,마케팅,\"2026년 우수상품온,오프라인판로개척지원\",200000000,152791470\n2026-09,마케팅,2026년 전북놀고선물받고연계지원사업,30000000,13353553\n2026-09,마케팅,2026년 로컬상품관입점지원,144000000,13149080\n2026-09,마케팅,2026년 농공상융합형중소기업전북생생장터전용판매관운영,20000000,13637012\n2026-09,마케팅,2026년 익산원예농협지원사업,10000000,0\n2026-09,마케팅,2023년 고향사랑기부제-이월,384920,0\n2026-09,마케팅,2024년 고향사랑기부제-이월,120000,0\n2026-09,마케팅,2025년 고향사랑기부제운영_이월,349260,54400\n2026-09,마케팅,2025년 전북생생장터운영_이월,57951000,49990343\n2026-09,수출지원,2026년 수출기업활성화지원사업,1480000000,1292046240\n2026-09,수출지원,2026년 중국광저우수출입상품교역회수출컨소시엄,121622000,120842990\n2026-09,수출지원,2026년 지역혁신클러스터육성사업,500000000,312070679\n2026-09,수출지원,2026년 홍콩주얼리&젬월드전시회지원,32610000,28771063\n2026-09,수출지원,2026년 전주K-프리미엄소비재호주무역사절단운영,60000000,0\n2026-09,수출지원,2025년 국가혁신클러스터육성(비R&D)3차년도_이월,25594000,20254392\n2026-09,일자리취업,2026년 전북특별자치도일자리센터운영사업,900000000,583595651\n2026-09,일자리취업,2026년 기능우수인력도내중소기업취업지원,162000000,102490960\n2026-09,일자리취업,2026년 지역특화형비자사업,287250000,192565260\n2026-09,일자리취업,2026년 직업교육혁신지구사업,600000000,316109922\n2026-09,일자리취업,2026년 전북형청년친화기업육성사업,290000000,105498700\n2026-09,일자리취업,2026년 신중년유연근무형일자리지원사업,441600000,54053470\n2026-09,일자리취업,2026년 육아휴직대체인력근로자지원,166000000,153440200\n2026-09,일자리취업,2026년 초등학부모10시출근제도입중소기업지원,140000000,94031400\n2026-09,일자리취업,2025년 직업교육혁신지구사업_이월,141533000,139023000\n2026-09,일자리취업,2025년 청년나래일자리지원사업(이음플러스)_이월,277004341,137246600\n2026-09,일자리취업,2025년 청년친화친구기업지원사업_이월,200236840,119032250\n2026-09,소상공인지원,2026년 전북민생솔루션,500000000,299443336\n2026-09,소상공인지원,2026년 전북천년명가육성사업,230000000,158772400\n2026-09,소상공인지원,2026년 소상공인온라인판로지원사업,400000000,303322970\n2026-09,소상공인지원,2026년 폐업소상공인사업정리지원사업,100000000,51648280\n2026-09,소상공인지원,2026년 전북소상공인든든보험,850000000,92171030\n2026-09,소상공인지원,2026년 새출발재기지원사업,200000000,49727791\n2026-09,소상공인지원,2026년 로컬창업기업육성사업(로컬기업육성),1208440000,1022073827\n2026-09,소상공인지원,2026년 로컬창업기업육성사업(모두의창업),16700000,11000000\n2026-09,소상공인지원,2025년 1인자영업자사회보험료지원_이월,43000000,10731200\n2026-09,소상공인지원,2025년 소상공인온라인판로지원사업_이월,3800000,2500000\n2026-09,소상공인지원,2025년 전북민생솔루션_이월,5000000,3200000\n2026-09,소상공인육성,2026년 소상공인희망센터운영,596500000,394308081\n2026-09,소상공인육성,2026년 지역경제살리기도민운동사업,98000000,97912136\n2026-09,소상공인육성,2026년 순창장류소공인특화지원센터운영(11차년도),410000000,279720197\n2026-09,소상공인육성,2026년 중장년기술창업센터운영(국비),75000000,37060410\n2026-09,소상공인육성,2026년 중장년기술창업센터운영(도비),50000000,15011980\n2026-09,소상공인육성,2026년 로컬브랜드활용관광콘텐츠활성화사업,50000000,50000000\n2026-09,소상공인육성,2025년 순창장류소공인특화지원센터운영(10차)_이월,19692999,11608010\n2026-09,공동체정책,2026년 전북사회적경제혁신타운운영,1908462000,939061320\n2026-09,공동체정책,2026년 사회적기업창업경영지원운영사업,1246360000,549374239\n2026-09,공동체정책,2026년 완주군사회적경제기본계획수립연구용역,20460000,1746000\n2026-09,공동체정책,2026년 지역생태계활성화전략사업(통합돌봄),942600000,480399200\n2026-09,공동체정책,2026년 지역생태계활성화전략사업(노동통합),628400000,210942890\n2026-09,공동체정책,2026년 사회적연대경제청년일경험시범사업,126368000,24725490\n2026-09,사회적경제육성,2026년 마을기업육성사업,492000000,314940509\n2026-09,인력양성,2026년 지역산업맞춤형인력양성사업,604000000,284643120\n2026-09,인력양성,2026년 산업구조변화대응등특화훈련,130000000,70951712\n2026-09,일자리창출,2026년 지역산업맞춤형일자리창출지원사업,250000000,148351595\n2026-09,일자리창출,26년 농생명산업및새만금고용특구일자리생태계조성프젝트,400000000,197495190\n2026-09,일자리창출,2026년 도농상생형고용플랫폼조성프로젝트,4199000000,4049000000\n2026-09,일자리창출,2026년 기초이음프로젝트(바이오),60000000,17794160\n2026-09,일자리창출,2026년 기초이음프로젝트(관광),60000000,22344060";
 const SAMPLE_SETTINGS_CSV = "구분,항목,값\nSTATUS,우수기준,90\nSTATUS,보통기준,60\nTEAM_ORDER,1,미래전략팀\nTEAM_ORDER,2,스타트업이노베이션팀\nTEAM_ORDER,3,기업성장팀\nTEAM_ORDER,4,자금지원팀\nTEAM_ORDER,5,현장지원팀\nTEAM_ORDER,6,수출전략팀\nTEAM_ORDER,7,마케팅팀\nTEAM_ORDER,8,수출지원팀\nTEAM_ORDER,9,일자리취업팀\nTEAM_ORDER,10,소상공인지원팀\nTEAM_ORDER,11,소상공인육성팀\nTEAM_ORDER,12,공동체정책팀\nTEAM_ORDER,13,사회적경제육성팀\nTEAM_ORDER,14,인력양성팀\nTEAM_ORDER,15,일자리창출팀\nTEAM_ORDER,16,경영관리팀\nTEAM_ORDER,17,법인운영";
 
 let rows = [];
